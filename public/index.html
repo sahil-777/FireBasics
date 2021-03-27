@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Firebase Practice</title>
 </head>
+
 <body>
   <!--CONFIG FIREBASE-->
 
@@ -13,10 +14,10 @@
     <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-database.js"></script>
-
+    <script src="app.js"></script>
     <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
-
+<!--
     <script>
       // Your web app's Firebase configuration
       var firebaseConfig = {
@@ -32,10 +33,18 @@
       const auth = firebase.auth();
       const db = firebase.database();
     </script>
+    -->
 
     <h1>Hii</h1>
 
-    
+      <p id="userInfo "></p>
+      <input name="email" type="email" id="email">
+      <input name="password" type="password" id="password">
+      <button onclick="signUp()">SignUp</button>
+      <button onclick="signIn()">SignIn</button>
+      <button onclick="signOut()">SignOut</button>
+ 
+     
 
 
 
